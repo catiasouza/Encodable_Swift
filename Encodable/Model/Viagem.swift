@@ -1,8 +1,12 @@
 
 import Foundation
 
-class Viagem{
+class Viagem: NSObject, Encodable{
     
+    // MUDANDO A VARIAVEL
+    enum CodingKeys: String, CodingKey{
+        case id, titulo, quantidadeDias = "quantidade_de_dias", preco, localizacao
+    }
     //ATRIBUTOS
     
     let id: Int
@@ -20,6 +24,8 @@ class Viagem{
         self.quantidadeDias = quantidadeDias
         self.preco = preco
         self.localizacao = localizacao
+        
+        
     }
 }
 
