@@ -1,7 +1,7 @@
 
 import Foundation
 
-class Viagem {
+class Viagem{
     
     //ATRIBUTOS
     
